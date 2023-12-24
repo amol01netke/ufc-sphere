@@ -6,6 +6,7 @@ import "./EventDetails.css";
 import FightsList from "../../components/FightsList/FightsList";
 import FormatDate from "../../helpers/FormatDate";
 import FormatTime from "../../helpers/FormatTime";
+import MessageScreen from "../../components/MessageScreen/MessageScreen";
 
 //main component of event details page
 export const Main = (props) => {
@@ -64,7 +65,7 @@ const EventDetails = () => {
     fetchEvent();
   }, [API_URL]);
 
-  if (error) return <p>"Oops... Something went wrong!"</p>;
+  if (error) return <MessageScreen message={error.message} />;
 
   return (
     <React.Fragment>

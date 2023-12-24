@@ -1,12 +1,14 @@
 import ListItem from "./EventsListItem";
 import "./EventsList.css";
+import ErrorScreen from "../MessageScreen/MessageScreen";
+import MessageScreen from "../MessageScreen/MessageScreen";
 
 const EventsList = (props) => {
   return (
     <center>
       <ul className="EventsList">
         {props.isLoading ? (
-          <p>Loading...</p>
+          <MessageScreen message="Loading..." />
         ) : props.array.length ? (
           props.array.map((event) => (
             <ListItem
@@ -17,7 +19,7 @@ const EventsList = (props) => {
             />
           ))
         ) : (
-          <p>No events!</p>
+          <MessageScreen message="No events!" />
         )}
       </ul>
     </center>

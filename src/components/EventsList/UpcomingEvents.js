@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import MessageScreen from "../MessageScreen/MessageScreen";
 import EventsList from "./EventsList";
 
 const UpcomingEvents = () => {
@@ -36,7 +37,7 @@ const UpcomingEvents = () => {
     });
   };
 
-  if (error) return <p>"Oops... Something went wrong!"</p>;
+  if (error) return <MessageScreen message={error.message} />;
 
   return <EventsList array={upcomingEvents} isLoading={isLoading} />;
 };
