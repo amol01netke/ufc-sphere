@@ -1,0 +1,6 @@
+.App-footer {
+  text-align: center;
+  color: var(--text-color);
+  padding: 15px 0px;
+  background-color: var(--color-1);
+}

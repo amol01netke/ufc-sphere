@@ -1,0 +1,7 @@
+.EventsList {
+  list-style-type: none;
+}
+
+.EventsList p {
+  color: var(--text-color);
+}
