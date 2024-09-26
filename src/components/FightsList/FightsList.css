@@ -1,0 +1,7 @@
+.FightsList {
+  list-style-type: none;
+}
+
+.FightsList p {
+  color: var(--text-color);
+}

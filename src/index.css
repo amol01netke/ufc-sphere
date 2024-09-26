@@ -1,0 +1,14 @@
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --color-1: #222;
+  --color-2: #e50914;
+  --color-3: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,44 @@
+.event-main {
+  min-height: 70vh;
+}
+
+.event-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.event-name {
+  font-size: 2em;
+}
+
+.event-datetime {
+  display: inline-flex;
+}
+
+.event-date,
+.event-time {
+  margin-top: 10px;
+  padding: 0px 5px;
+  font-size: 1.2em;
+}
+
+.event-fights {
+  margin: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .events-main {
+    min-height: 100vh;
+  }
+
+  .event-name {
+    font-size: 1.5em;
+  }
+
+  .event-date,
+  .event-time {
+    font-size: 1.1em;
+  }
+}
